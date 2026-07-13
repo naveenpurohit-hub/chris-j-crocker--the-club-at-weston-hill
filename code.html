@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nick Adcock Golf | Performance Coaching</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f5f3f3",
+                        "inverse-surface": "#303031",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "stroke-gray": "#E0E0E0",
+                        "primary-fixed": "#e5e2e1",
+                        "on-tertiary-container": "#878888",
+                        "background": "#fbf9f8",
+                        "surface-tint": "#5f5e5e",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#c8c6c5",
+                        "on-surface": "#1b1c1c",
+                        "on-primary-fixed-variant": "#474746",
+                        "on-secondary-fixed": "#410007",
+                        "secondary-fixed-dim": "#ffb3b1",
+                        "error": "#ba1a1a",
+                        "secondary": "#bb0027",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#efeded",
+                        "on-background": "#1b1c1c",
+                        "on-tertiary": "#ffffff",
+                        "deep-red": "#9B0D24",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#e0283c",
+                        "on-surface-variant": "#444748",
+                        "on-secondary-fixed-variant": "#92001c",
+                        "on-secondary": "#ffffff",
+                        "surface": "#fbf9f8",
+                        "surface-variant": "#e4e2e2",
+                        "surface-dim": "#dbdad9",
+                        "tertiary": "#080a0a",
+                        "surface-container-high": "#e9e8e7",
+                        "error-container": "#ffdad6",
+                        "surface-cream": "#F4EDE4",
+                        "outline-variant": "#c4c7c7",
+                        "on-primary-fixed": "#1b1c1c",
+                        "secondary-fixed": "#ffdad8",
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface-bright": "#fbf9f8",
+                        "tertiary-container": "#1f2121",
+                        "on-primary-container": "#898888",
+                        "outline": "#747878",
+                        "tertiary-fixed": "#e2e2e2",
+                        "primary": "#0a0a0a",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "surface-container-highest": "#e4e2e2",
+                        "on-secondary-container": "#fffbff",
+                        "primary-container": "#212121",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-tertiary-fixed": "#1a1c1c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "stack-sm": "12px",
+                        "unit": "8px",
+                        "stack-md": "32px",
+                        "stack-lg": "80px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "button": ["Hanken Grotesk"],
+                        "label-caps": ["JetBrains Mono"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "display-xl": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "button": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "display-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-diagonal {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-surface border-b border-stroke-gray h-20 flex items-center">
+<div class="max-w-container-max mx-auto px-margin-desktop w-full flex justify-between items-center">
+<div class="flex items-center">
+<img alt="Nick Adcock Golf Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLtYaVgbzj59kFH1scXVBsxoP2nMoz8Felh7KiKrODbLAgeDBkxkdRcZL3W2Hk5E9E6gCHZSuRh2Jiid3o_5U6sVX_k3acbRE7ZTTK25GWyqURCHSAqlxUH6_ZKP8lS3wVQFcjEP_MaT1FHiDvBdSTqFNVzOEiX-d0ZfdiPHMseFYLTd4eEJr-RgUk3x9ii6R1-1UavGGmeGZvgNJc15ZQAGTjJgkmSqkDg5HzFgz23UrtffwMNMp1zEYA"/>
+</div>
+<div class="hidden md:flex gap-stack-md items-center">
+<a class="font-button text-button uppercase tracking-widest text-primary border-b-2 border-primary pb-1" href="#">Home</a>
+<a class="font-button text-button uppercase tracking-widest text-on-surface-variant hover:text-deep-red transition-colors duration-200" href="#">About</a>
+<a class="font-button text-button uppercase tracking-widest text-on-surface-variant hover:text-deep-red transition-colors duration-200" href="#">In-Person</a>
+<a class="font-button text-button uppercase tracking-widest text-on-surface-variant hover:text-deep-red transition-colors duration-200" href="#">Online</a>
+<a class="font-button text-button uppercase tracking-widest text-on-surface-variant hover:text-deep-red transition-colors duration-200" href="#">Blog</a>
+</div>
+<div class="flex items-center gap-stack-sm">
+<a class="bg-secondary text-on-secondary px-6 py-3 font-button text-button uppercase rounded-lg hover:bg-deep-red transition-all" href="#">Book Now</a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-stack-lg pb-stack-lg lg:pt-stack-lg lg:pb-0">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6 space-y-stack-md">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary inline-block border-b border-secondary pb-1">Fact Based Coaching</span>
+<h1 class="font-display-xl text-display-xl text-primary leading-tight">
+                    Helping Golfers Hit The Ball <span class="text-secondary">Better</span> &amp; Shoot Lower Scores
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Are you a passionate golfer, but struggle when it comes to playing at a consistent level? If you want to get better but don’t know where to start, that’s where I come in!
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="bg-primary-container text-on-secondary px-8 py-4 font-button text-button uppercase rounded-lg hover:opacity-90 transition-opacity" href="#">Get Started</a>
+<a class="border border-primary-container text-primary-container px-8 py-4 font-button text-button uppercase rounded-lg hover:bg-primary-container hover:text-white transition-all" href="#">Coaching Process</a>
+</div>
+</div>
+<div class="lg:col-span-6 relative mt-12 lg:mt-0">
+<div class="absolute -right-4 top-4 w-full h-full bg-surface-cream -z-10 rounded-lg"></div>
+<div class="relative rounded-lg overflow-hidden border border-stroke-gray">
+<img alt="Nick Adcock coaching a student on the putting green" class="w-full h-auto object-cover grayscale-0 hover:grayscale-[0.2] transition-all duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLs7b_rxdd09_LzLNXia4S4FDjFp3Hq9Fgel8CRHpm0V0ZaJPFKwGZBZ7rSgl_pQIkPmDpyTZCFu73KHqHv-cRJ33dcnwKPTAWDuo3ZmokQ-qAGYIstTic7eHMlTvCqYe940xPvkpKe8dhc0HEhIDsJlI1NHmSUlLY30SVATPZToqLeAI7QqEGUPU5fIXH9Sz8klhNrLUfwsYMurCbVaxMcHMv4v75pToY-bMVC7YX1KFnGVUWauGUkUCRQ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Certifications Section -->
+<section class="py-stack-lg bg-surface-container-lowest border-y border-stroke-gray">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mb-stack-md">Industry Recognition &amp; Certifications</h2>
+<div class="flex flex-wrap justify-center items-center gap-16 opacity-80 hover:opacity-100 transition-opacity">
+<!-- Instruction badges -->
+<div class="w-32 flex flex-col items-center">
+<img class="h-24 object-contain" data-alt="A professional circular emblem for an Authorized Instructor, featuring clean black and red typography on a crisp white background, styled as a modern vector badge for a premium golf coaching brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyQdPwH3v_Vck_mFcTFhKF7MuEwaHpRx2N494PphANN7sAgLoeMFsRLBTSSMjo0AM9L0ogJPNcSkwGKCqtG1jV_hN_1CWAyp38W8HF1Vk0PFVQUjQsncccF8Sk0-ZQ_-f-DnTF7a4iPuNIWKXtTHyZ7VlWmlBhHtp2op_I0Ud_k5kvxTRtFDNHFFPcZYRd-a0lcefv8-lMEAyADgGmqCckjvDaqtuPqd9RVFORpcorAs1rlzL_fbc6OuElanFVfiSjL06Q3WTPSEg"/>
+<span class="mt-4 font-label-caps text-[10px] uppercase">Authorized Instructor</span>
+</div>
+<div class="w-48 flex flex-col items-center">
+<img class="h-28 object-contain" data-alt="Golf Digest Best Teachers 2024-2025 badge, featuring a high-contrast black frame with bold white and red typography. The design is clean, authoritative, and communicates prestige and technical expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQcR9mLhS5gFup5quuGh2HLyh5ElmnJSwlA5PocEh4fdruwDwLwgKhk_o0XmugDXtpR3nit2SSwkUopr53UMaCPkVelVCnMIqAgNQ_g10i6I58gkRDKN_GC7M34YNxTwF7UT9tbQ1eFwTJNszNNhIzv0FLiNHX7TkmdToAfNwq8ilSoSPhlXbwrACIF4dK7sY-rBe4hrzit5Kzf2JfD3k2OOHvUFHAUfC404LS3TgdIX4A1lFgxCodgd6K56AewryjzCe21G8gKXo"/>
+</div>
+<div class="w-32 flex flex-col items-center">
+<img class="h-20 object-contain" data-alt="FlightScope Professional logo, featuring the iconic red 'f' stylized icon with elegant typography. This represents high-tech launch monitor certification in a minimalist, professional golf instruction context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk9uueItu2AbGNQoyQe5pvZ4y9bbCDLN-e2fuBNGLI2C5xfapehXj8oz8r-OkaJzfwl6jMB5JPR5lmkT-wxMDsQnzhzbe8JR9BNV6LysvD058Km0ug6RM95aJfaw_5YmtFtfKe5KO4LMDdHQu-6UaK8QMQn8z44kUoJNE0B4aSEh2n5K_4rg4pSWFBer-fKjSgPwTTLbCDDi4MKq1kb_1ncU6QpMvOEBY6jq7Dm2ZK08rnL7fLfO0DVGLjnsZFY526wOjQYVkjlWg"/>
+<span class="mt-4 font-label-caps text-[10px] uppercase">FlightScope Pro</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-stack-lg bg-white">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-stack-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Technical Performance Services</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Data-driven approaches to improving your game, whether in-person or online.</p>
+</div>
+<a class="hidden md:block font-button text-button uppercase text-secondary border-b border-secondary" href="#">View All Programs</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Service 1 -->
+<div class="group flex flex-col bg-surface-container-lowest border border-stroke-gray rounded-lg p-stack-md hover:border-primary transition-all cursor-pointer">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white mb-6">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">In-Person Lessons</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        One-on-one sessions at our premier facility. Utilizing Trackman data and video analysis to build a repeatable swing.
+                    </p>
+<a class="font-button text-button uppercase flex items-center gap-2 group-hover:text-secondary transition-colors" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 2 -->
+<div class="group flex flex-col bg-surface-container-lowest border border-stroke-gray rounded-lg p-stack-md hover:border-primary transition-all cursor-pointer">
+<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white mb-6">
+<span class="material-symbols-outlined">laptop_mac</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">Online Coaching</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        Remote swing analysis via Skillest. Get personalized video feedback and drills delivered directly to your phone.
+                    </p>
+<a class="font-button text-button uppercase flex items-center gap-2 group-hover:text-secondary transition-colors" href="#">
+                        Book Remote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="group flex flex-col bg-surface-container-lowest border border-stroke-gray rounded-lg p-stack-md hover:border-primary transition-all cursor-pointer">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white mb-6">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">Technical Blog</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        Deep dives into swing mechanics, equipment reviews, and mental strategies to lower your handicap.
+                    </p>
+<a class="font-button text-button uppercase flex items-center gap-2 group-hover:text-secondary transition-colors" href="#">
+                        Read Insights <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Membership Section -->
+<section class="py-stack-lg bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Join The Program</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2">Performance Memberships</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">Elevate your game with structured ongoing support and exclusive access to technical coaching.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md max-w-4xl mx-auto">
+<!-- Premium Performance -->
+<div class="bg-surface-container-lowest border border-stroke-gray p-8 rounded-xl flex flex-col hover:border-secondary transition-all">
+<div class="mb-8">
+<h3 class="font-headline-md text-headline-md text-primary">Premium Performance</h3>
+<div class="mt-4 flex items-baseline gap-1">
+<span class="text-4xl font-bold text-primary">$299</span>
+<span class="text-on-surface-variant">/month</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-md text-on-surface-variant">2 In-Person Lessons per Month</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-md text-on-surface-variant">Unlimited Online Swing Reviews</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-md text-on-surface-variant">Personalized Practice Plan</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-md text-on-surface-variant">Trackman Data Reports</span>
+</li>
+</ul>
+<a class="w-full text-center py-4 border border-primary text-primary font-button uppercase rounded-lg hover:bg-primary hover:text-white transition-all" href="#">Select Plan</a>
+</div>
+<!-- Elite Tour -->
+<div class="bg-primary text-white p-8 rounded-xl flex flex-col relative overflow-hidden">
+<div class="absolute top-4 right-4 bg-secondary text-white text-[10px] font-label-caps px-3 py-1 rounded-full uppercase tracking-tighter">Recommended</div>
+<div class="mb-8">
+<h3 class="font-headline-md text-headline-md">Elite Tour</h3>
+<div class="mt-4 flex items-baseline gap-1 text-white">
+<span class="text-4xl font-bold">$499</span>
+<span class="opacity-60">/month</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-md opacity-90">4 In-Person Lessons per Month</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-md opacity-90">Priority 24h Online Support</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-md opacity-90">Monthly On-Course Strategy Lesson</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-md opacity-90">Full Club Gapping &amp; Equipment Audit</span>
+</li>
+</ul>
+<a class="w-full text-center py-4 bg-secondary text-white font-button uppercase rounded-lg hover:bg-deep-red transition-all shadow-lg" href="#">Start Elite Training</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="py-stack-lg bg-white border-y border-stroke-gray">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Book Your Session</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4 mb-stack-md">Select your preferred date and time to start your performance journey. Our automated system syncs directly with the facility schedule.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-low rounded-full flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">event_available</span>
+</div>
+<div>
+<h4 class="font-headline-md text-lg">Real-Time Availability</h4>
+<p class="text-on-surface-variant">See open slots for the next 30 days instantly.</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-low rounded-full flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<div>
+<h4 class="font-headline-md text-lg">Secure Booking</h4>
+<p class="text-on-surface-variant">Instant confirmation with secure payment processing.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-stack-sm rounded-xl border border-stroke-gray">
+<!-- Mock Calendar Interface -->
+<div class="bg-white rounded-lg p-6 shadow-sm">
+<div class="flex items-center justify-between mb-6">
+<h5 class="font-headline-md text-lg">November 2024</h5>
+<div class="flex gap-2">
+<button class="p-1 hover:bg-surface-container-low rounded transition-colors"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="p-1 hover:bg-surface-container-low rounded transition-colors"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-2 text-center text-xs font-label-caps text-on-surface-variant mb-4">
+<div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div><div>SUN</div>
+</div>
+<div class="grid grid-cols-7 gap-2">
+<div class="py-2 text-sm text-outline-variant opacity-30">28</div>
+<div class="py-2 text-sm text-outline-variant opacity-30">29</div>
+<div class="py-2 text-sm text-outline-variant opacity-30">30</div>
+<div class="py-2 text-sm text-outline-variant opacity-30">31</div>
+<button class="py-2 text-sm hover:bg-surface-container-low rounded font-medium">1</button>
+<button class="py-2 text-sm hover:bg-surface-container-low rounded font-medium">2</button>
+<button class="py-2 text-sm hover:bg-surface-container-low rounded font-medium">3</button>
+<button class="py-2 text-sm hover:bg-surface-container-low rounded font-medium">4</button>
+<button class="py-2 text-sm hover:bg-surface-container-low rounded font-medium">5</button>
+<button class="py-2 text-sm bg-secondary text-white rounded font-bold">6</button>
+<button class="py-2 text-sm hover:bg-surface-container-low rounded font-medium">7</button>
+<button class="py-2 text-sm hover:bg-surface-container-low rounded font-medium">8</button>
+<button class="py-2 text-sm hover:bg-surface-container-low rounded font-medium">9</button>
+<button class="py-2 text-sm hover:bg-surface-container-low rounded font-medium">10</button>
+<!-- ... simplified ... -->
+</div>
+<div class="mt-8 border-t border-stroke-gray pt-6">
+<p class="font-label-caps text-xs text-on-surface-variant uppercase mb-4">Available Slots for Wednesday 6th</p>
+<div class="grid grid-cols-3 gap-2">
+<button class="px-2 py-3 border border-stroke-gray rounded text-sm hover:border-secondary hover:text-secondary transition-colors">09:00 AM</button>
+<button class="px-2 py-3 bg-secondary/10 border border-secondary text-secondary rounded text-sm">10:30 AM</button>
+<button class="px-2 py-3 border border-stroke-gray rounded text-sm hover:border-secondary hover:text-secondary transition-colors">02:00 PM</button>
+</div>
+<button class="w-full mt-6 bg-primary text-white py-4 font-button uppercase rounded-lg hover:opacity-90 transition-opacity">Book Selection Now</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Performance Metric Teaser (Technical Precision) -->
+<section class="py-stack-lg bg-primary text-white overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-stack-sm">Track Progress with Precision</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-stack-md">We don't guess, we measure. Every swing is analyzed against professional standards to find your specific margin for improvement.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 bg-primary-container p-4 rounded border border-white/10 hover:border-white/30 transition-all">
+<span class="font-label-caps text-secondary">01</span>
+<div class="font-label-caps uppercase tracking-tighter">Swing Path Analysis</div>
+<div class="ml-auto font-label-caps text-secondary">METRIC-DRIVEN</div>
+</div>
+<div class="flex items-center gap-4 bg-primary-container p-4 rounded border border-white/10 hover:border-white/30 transition-all">
+<span class="font-label-caps text-secondary">02</span>
+<div class="font-label-caps uppercase tracking-tighter">Impact Optimization</div>
+<div class="ml-auto font-label-caps text-secondary">HIGH PRECISION</div>
+</div>
+<div class="flex items-center gap-4 bg-primary-container p-4 rounded border border-white/10 hover:border-white/30 transition-all">
+<span class="font-label-caps text-secondary">03</span>
+<div class="font-label-caps uppercase tracking-tighter">Ball Flight Consistency</div>
+<div class="ml-auto font-label-caps text-secondary">LONG-TERM GROWTH</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-video bg-surface-container-low rounded-lg border-4 border-primary-container overflow-hidden relative shadow-2xl">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000" data-alt="A high-speed photography capture of a professional golfer at impact, emphasizing the technical precision of the club path. The scene is illuminated by crisp studio lighting, creating a sharp, modern sports science aesthetic with subtle red light trails tracing the clubhead path." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVhXo9RGn-Q3byspfLPch4_eVW3nVQslbuELALC0zGb26-gUfvAHJ-KbIFkysV-j3BSKLYkec8co3xP_Z_nKEILYoy8_chFOCvVuIk15hITV1iIjXhCO2GsBd73e3ifO6RjKp_xwDMBV9NLGpA89Bs5hbGzcrDEphIclnhlBEdTHgTGsDPv0xBbriLnwEqI5md7oihmb-4HpdsQ6ezyeyXel7RxAd8n6y0YyxImuWYHnHgUGxwMbNnRSncVL4Hh-3bOm0rVlWlMEo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
+<div>
+<div class="font-label-caps text-secondary mb-2">LIVE DATA FEED</div>
+<div class="text-3xl font-display-xl font-bold">114.5 <span class="text-lg font-light opacity-60">MPH CLUB SPEED</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-stack-lg bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Student Success</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2">Driven by Results</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-8 border border-stroke-gray rounded-lg">
+<div class="flex gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-on-surface mb-8 italic">"After years of stuck at a 12 handicap, Nick's data-driven approach changed everything. My ball striking has never been more consistent."</p>
+<div class="flex items-center gap-4 pt-6 border-t border-stroke-gray">
+<div class="w-12 h-12 bg-surface-dim rounded-full flex-shrink-0"></div>
+<div>
+<h5 class="font-headline-md text-base leading-tight">David Miller</h5>
+<p class="font-label-caps text-[10px] text-secondary">Improved 12 HC → 7 HC</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-8 border border-stroke-gray rounded-lg">
+<div class="flex gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-on-surface mb-8 italic">"The online coaching via Skillest is a game changer. Having personalized drills on my phone at the range is like having Nick right there with me."</p>
+<div class="flex items-center gap-4 pt-6 border-t border-stroke-gray">
+<div class="w-12 h-12 bg-surface-dim rounded-full flex-shrink-0"></div>
+<div>
+<h5 class="font-headline-md text-base leading-tight">Sarah Jenkins</h5>
+<p class="font-label-caps text-[10px] text-secondary">Added 25 Yards Off Tee</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-8 border border-stroke-gray rounded-lg">
+<div class="flex gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-on-surface mb-8 italic">"Nick doesn't just teach a swing, he teaches you how to own YOUR game. The Trackman sessions were eye-opening for my yardage control."</p>
+<div class="flex items-center gap-4 pt-6 border-t border-stroke-gray">
+<div class="w-12 h-12 bg-surface-dim rounded-full flex-shrink-0"></div>
+<div>
+<h5 class="font-headline-md text-base leading-tight">Marcus Thompson</h5>
+<p class="font-label-caps text-[10px] text-secondary">Scratch Player Program</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social / Instagram Feed -->
+<section class="py-stack-lg bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-center mb-stack-md gap-4">
+<div class="text-center md:text-left">
+<h2 class="font-headline-md text-headline-md">Follow the Journey</h2>
+<p class="font-body-md text-on-surface-variant">Daily coaching tips and student transformations.</p>
+</div>
+<div class="flex gap-4">
+<a class="p-3 border border-stroke-gray rounded-full hover:bg-secondary hover:text-white transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.335 3.608 1.31.975.975 1.248 2.242 1.31 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.335 2.633-1.31 3.608-.975.975-2.242 1.248-3.608 1.31-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.335-3.608-1.31-.975-.975-1.248-2.242-1.31-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.335-2.633 1.31-3.608.975-.975 2.242-1.248 3.608-1.31 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.058-1.28-.073-1.689-.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.28-.059-1.688-.073-4.947-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="p-3 border border-stroke-gray rounded-full hover:bg-secondary hover:text-white transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
+<!-- Insta Posts -->
+<div class="aspect-square bg-surface-container-high rounded overflow-hidden group relative cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close up of a golfer's grip on a driver" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHG0uLASUxLBwoDGHld7cb31Uq9Bo2rd8GOvt-RTws0-2A5aNUe8oiNbBiHbjqmpkNC7YmRgnhNR9vIK8tSdl9TyvM8r2v8soxvhGal0UK0QcS_nxuSr0NWSrJei3A8hYmVoVBjDChX5ETF3AG5Iy1hVK4CL9boozAQAxii0MgGCnxs3uU23qHQkwo2pEJ5cp7w7RjwENan86zK3Hk7MYoIi9VhAxh1mBhF5QNZB3b_jF1u-gB56VWl6PgDQ8zhulEQehxUQ-zWMQ"/>
+<div class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<div class="aspect-square bg-surface-container-high rounded overflow-hidden group relative cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Wide shot of a student's full swing sequence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLwRnr3hKrsyIDcpG0ma_eZ7bZL43C5Vy0JYw9ojiFH7Hw9jm9cNB2FEFIM9qme2AL4vbusbIjuGt81EoMblABK5oPmrjoZTJ22oy1Pv_WVrEusIcgZpXAhGW6LDnyAyFqL52jIsSjh-V4hwVJE8wTYnAr1raSHVuG-8TKWpZnzcFVQ4oUZuD_L_AFOBGPUgr_8SCfa2GP3j9KXKMDCRWOVCBBECrH78yUqnziRYWsmEG0zmR4h3-qXu1PpKsl4L5QjVjVEXnIguM"/>
+</div>
+<div class="aspect-square bg-surface-container-high rounded overflow-hidden group relative cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Student reacting to a successful putt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDquIEMOlY9KkFgw1mJPI56a1uxWEfuwR-55R2Y0ftPwiHGVDzkpQSMSH9vXbSV8bMP5XCGpCucj-tMH4yTLnJJ57TXNTtQiq7yCXKaOGJeFM7a0mfOx4zU1AlwDV_JIQ0dcnnffV_BFr-LayVF2qQcviYSSMOeGt__bfXWDOniJRRSvcFWQWmlRlMY4Izpzb1XJvgfYk9KDmnc6e5d2e5tJG_KNKo2PGzr8OVw9jmTEQH1MEdSLWXHVIWrtBzvGAkbJenbRTUvgcc"/>
+</div>
+<div class="aspect-square bg-surface-container-high rounded overflow-hidden group relative cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Macro shot of launch monitor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp-S1KhNJoPDUSHH4EK5_XfuPg8NzIJF0myiEV8L-US_n_vz-VES_X8QSvoE7VYYh5azMb9l0kgEiGJJKEXuf8tiOgnlaXD5QXGYakwYM6023ToFatED941rPWW1EATtAXuMeXn-9qvo7x6MfUbcl1NGt8FGEvnzIH6gl62XoF_ChHyEPvuZ6PfgN-2G9ldwl__bv2t67-EpIVpZjfrR3luJLHiYQKVSpDQnPQo4psH8A2B-ZnptEbJ7Y4WhRwOiwSm9rU_Slcroo"/>
+</div>
+<div class="aspect-square bg-surface-container-high rounded overflow-hidden group relative cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Before/after swing comparison" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSK2Kk01prAWuhGTvPqZ88zRrdKNOtyZH6i1wSIt2oyPzfs7UGp7EISK56R-VQgN9_ju66Qrjtiajlj62aRtmdbUvNWPh7pnAhgyyODFTn07ob80ZzKuOE_AHphPbRDw0yg4pOq-sM9k8JO0BqFnDfhw3s2vdeXjuAwy0s1EUb16sgoJ52Qd2m1SHQcN7o4FsfNXzv8nhLlPI2r-K5_KQthjEZtKGVK9HaEwriMOXLuLDwgTAaN9z6a09suMzxlVZIqOiemGfpYxM"/>
+</div>
+<div class="aspect-square bg-surface-container-high rounded overflow-hidden group relative cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Golf balls on green with laser" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM_KdqrI_CzdIyH0VHqVdLujF_uSMSdAeITxZHUos5rdyl-6Zwejqs-Zp649YwT6M-191yGekS3gxoq1yVezC6w-3xnscic5zbyqaU6g1gwsCRYpsHavu3czC9I5VzoVY3mr8f3JGNOY9ZbgbvUc8kQ8Q4UuiejHYzkOWVx5smvj_VEnr-kmSbxUXO7uebGFCqP-A4oP7eM59GOO-B-PKCQeij2dI064ybnWCRZcqA0gaLTBweM7h-i-V-M_MJjRuu_NYv5kNFg4s"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-stroke-gray">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-md">
+<div class="md:col-span-4 space-y-6">
+<img alt="Nick Adcock Golf Logo" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLtYaVgbzj59kFH1scXVBsxoP2nMoz8Felh7KiKrODbLAgeDBkxkdRcZL3W2Hk5E9E6gCHZSuRh2Jiid3o_5U6sVX_k3acbRE7ZTTK25GWyqURCHSAqlxUH6_ZKP8lS3wVQFcjEP_MaT1FHiDvBdSTqFNVzOEiX-d0ZfdiPHMseFYLTd4eEJr-RgUk3x9ii6R1-1UavGGmeGZvgNJc15ZQAGTjJgkmSqkDg5HzFgz23UrtffwMNMp1zEYA"/>
+<p class="font-body-md text-on-surface-variant max-w-xs">
+                        Premier golf coaching focused on technical excellence and measurable performance improvements. Helping you own your game.
+                    </p>
+<div class="space-y-2">
+<a class="font-label-caps block hover:text-secondary transition-colors" href="mailto:nickadcockgolf@gmail.com">nickadcockgolf@gmail.com</a>
+<a class="font-label-caps block hover:text-secondary transition-colors" href="tel:585-749-3403">585-749-3403</a>
+</div>
+</div>
+<div class="md:col-span-2 space-y-4">
+<h4 class="font-label-caps text-primary uppercase">Coaching</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-on-surface-variant hover:text-secondary hover:underline transition-all" href="#">In-Person</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-secondary hover:underline transition-all" href="#">Online Lessons</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-secondary hover:underline transition-all" href="#">My Philosophy</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-secondary hover:underline transition-all" href="#">Pricing</a></li>
+</ul>
+</div>
+<div class="md:col-span-2 space-y-4">
+<h4 class="font-label-caps text-primary uppercase">Resources</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-on-surface-variant hover:text-secondary hover:underline transition-all" href="#">Blog</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-secondary hover:underline transition-all" href="#">Training Drills</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-secondary hover:underline transition-all" href="#">FAQ</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-secondary hover:underline transition-all" href="#">Store</a></li>
+</ul>
+</div>
+<div class="md:col-span-4 space-y-4">
+<h4 class="font-label-caps text-primary uppercase">Newsletter</h4>
+<p class="font-body-md text-on-surface-variant">Get technical swing tips delivered to your inbox.</p>
+<form class="flex gap-2">
+<input class="flex-grow bg-white border border-stroke-gray rounded-lg px-4 py-2 text-on-surface focus:border-primary focus:ring-0 transition-colors" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-white px-4 py-2 font-button rounded-lg hover:opacity-90" type="submit">Join</button>
+</form>
+</div>
+</div>
+<div class="mt-stack-lg pt-stack-sm border-t border-stroke-gray flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-on-surface-variant text-sm">© 2024 Nick Adcock Golf, LLC. All rights reserved.</p>
+<div class="flex gap-stack-md">
+<a class="font-body-md text-on-surface-variant text-sm hover:text-primary" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-surface-variant text-sm hover:text-primary" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Chatbot Assistant -->
+<div class="fixed bottom-24 right-8 z-50">
+<div class="bg-white rounded-full p-4 shadow-2xl border border-stroke-gray cursor-pointer hover:scale-110 transition-transform group relative" id="chatToggle">
+<span class="material-symbols-outlined text-secondary text-3xl">smart_toy</span>
+<div class="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-primary text-white px-4 py-2 rounded font-button text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Coach Assistant</div>
+</div>
+</div>
+<!-- Back to top interaction -->
+<div class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center cursor-pointer shadow-xl opacity-0 translate-y-10 transition-all duration-300 hover:bg-secondary z-50" id="backToTop">
+<span class="material-symbols-outlined">expand_less</span>
+</div>
+<script>
+        // Scroll interactions
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.remove('opacity-0', 'translate-y-10');
+                backToTop.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                backToTop.classList.add('opacity-0', 'translate-y-10');
+                backToTop.classList.remove('opacity-100', 'translate-y-0');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Simple Reveal on Scroll effect
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
